@@ -13,6 +13,7 @@ SensirionI2cStcc4	KEYWORD1
 #######################################
 
 readMeasurement	KEYWORD2
+setPressureCompensation	KEYWORD2
 startContinuousMeasurement	KEYWORD2
 readMeasurementRaw	KEYWORD2
 stopContinuousMeasurement	KEYWORD2
@@ -20,7 +21,7 @@ measureSingleShot	KEYWORD2
 performForcedRecalibration	KEYWORD2
 getProductId	KEYWORD2
 setRhtCompensation	KEYWORD2
-setPressureCompensation	KEYWORD2
+setPressureCompensationRaw	KEYWORD2
 performSelfTest	KEYWORD2
 performConditioning	KEYWORD2
 enterSleepMode	KEYWORD2
@@ -28,6 +29,7 @@ exitSleepMode	KEYWORD2
 enableTestingMode	KEYWORD2
 disableTestingMode	KEYWORD2
 performFactoryReset	KEYWORD2
+reinit	KEYWORD2
 signalTemperature	KEYWORD2
 signalRelativeHumidity	KEYWORD2
 
