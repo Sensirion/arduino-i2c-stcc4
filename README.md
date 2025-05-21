@@ -1,7 +1,8 @@
 # Sensirion I²C STCC4 Arduino Library
 
 This is the Sensirion STCC4 library for Arduino allowing you to
-communicate with a STCC4 sensor over I²C.
+communicate with a STCC4 sensor
+over I²C.
 
 <img src="images/STCC4.png" width="300px">
 
