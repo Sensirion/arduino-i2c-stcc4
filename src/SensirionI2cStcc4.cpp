@@ -3,7 +3,7 @@
  *
  * Generator:     sensirion-driver-generator 1.2.0
  * Product:       stcc4
- * Model-Version: 3.2.0
+ * Model-Version: 3.3.0
  */
 /*
  * Copyright (c) 2025, Sensirion AG
@@ -157,18 +157,18 @@ int16_t SensirionI2cStcc4::measureSingleShot() {
     if (localError != NO_ERROR) {
         return localError;
     }
-    delay(350);
+    delay(500);
     return localError;
 }
 
 int16_t
-SensirionI2cStcc4::performForcedRecalibration(uint16_t targetCO2Concentration,
-                                              uint16_t& frcCorrection) {
+SensirionI2cStcc4::performForcedRecalibration(int16_t targetCO2Concentration,
+                                              int16_t& frcCorrection) {
     int16_t localError = NO_ERROR;
     uint8_t* buffer_ptr = communication_buffer;
     SensirionI2CTxFrame txFrame =
         SensirionI2CTxFrame::createWithUInt16Command(0x362f, buffer_ptr, 5);
-    localError |= txFrame.addUInt16(targetCO2Concentration);
+    localError |= txFrame.addInt16(targetCO2Concentration);
     if (localError != NO_ERROR) {
         return localError;
     }
@@ -184,7 +184,7 @@ SensirionI2cStcc4::performForcedRecalibration(uint16_t targetCO2Concentration,
     if (localError != NO_ERROR) {
         return localError;
     }
-    localError |= rxFrame.getUInt16(frcCorrection);
+    localError |= rxFrame.getInt16(frcCorrection);
     return localError;
 }
 
@@ -355,20 +355,6 @@ int16_t SensirionI2cStcc4::performFactoryReset(uint16_t& factoryResetResult) {
         return localError;
     }
     localError |= rxFrame.getUInt16(factoryResetResult);
-    return localError;
-}
-
-int16_t SensirionI2cStcc4::reinit() {
-    int16_t localError = NO_ERROR;
-    uint8_t* buffer_ptr = communication_buffer;
-    SensirionI2CTxFrame txFrame =
-        SensirionI2CTxFrame::createWithUInt16Command(0x3646, buffer_ptr, 2);
-    localError =
-        SensirionI2CCommunication::sendFrame(_i2cAddress, txFrame, *_i2cBus);
-    if (localError != NO_ERROR) {
-        return localError;
-    }
-    delay(10);
     return localError;
 }
 

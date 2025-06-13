@@ -29,7 +29,6 @@ exitSleepMode	KEYWORD2
 enableTestingMode	KEYWORD2
 disableTestingMode	KEYWORD2
 performFactoryReset	KEYWORD2
-reinit	KEYWORD2
 signalTemperature	KEYWORD2
 signalRelativeHumidity	KEYWORD2
 
