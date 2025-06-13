@@ -44,10 +44,10 @@ Use the following pin description to connect your STCC4 to the standard I²C bus
 
 | *Pin* | *Cable Color* | *Name* | *Description*  | *Comments* |
 |-------|---------------|:------:|----------------|------------|
-| 1 | yellow | SCL | I2C: Serial clock input |
-| 2 | black | GND | Ground |
-| 3 | red | VDD | Supply Voltage | 3.3V
-| 4 | green | SDA | I2C: Serial data input / output |
+| 1 | black | GND | Ground |
+| 2 | red | VDD | Supply Voltage | 2.7V to 5.5V
+| 3 | green | SDA | I2C: Serial data input / output |
+| 4 | yellow | SCL | I2C: Serial clock input |
 
 
 
@@ -64,10 +64,10 @@ You will find pinout schematics for recommended board models below:
 
 | *STCC4* | *STCC4 Pin* | *Cable Color* | *Board Pin* |
 | :---: | --- | --- | --- |
-| SCL | 1 | yellow | D19/SCL |
-| GND | 2 | black | GND |
-| VDD | 3 | red | 3.3V |
-| SDA | 4 | green | D18/SDA |
+| GND | 1 | black | GND |
+| VDD | 2 | red | 3.3V |
+| SDA | 3 | green | D18/SDA |
+| SCL | 4 | yellow | D19/SCL |
 
 
 
@@ -83,10 +83,10 @@ You will find pinout schematics for recommended board models below:
 
 | *STCC4* | *STCC4 Pin* | *Cable Color* | *Board Pin* |
 | :---: | --- | --- | --- |
-| SCL | 1 | yellow | A5 |
-| GND | 2 | black | GND |
-| VDD | 3 | red | 3.3V |
-| SDA | 4 | green | A4 |
+| GND | 1 | black | GND |
+| VDD | 2 | red | 3.3V |
+| SDA | 3 | green | A4 |
+| SCL | 4 | yellow | A5 |
 
 
 
@@ -102,10 +102,10 @@ You will find pinout schematics for recommended board models below:
 
 | *STCC4* | *STCC4 Pin* | *Cable Color* | *Board Pin* |
 | :---: | --- | --- | --- |
-| SCL | 1 | yellow | ~D3/SCL |
-| GND | 2 | black | GND |
-| VDD | 3 | red | 3.3V |
-| SDA | 4 | green | D2/SDA |
+| GND | 1 | black | GND |
+| VDD | 2 | red | 3.3V |
+| SDA | 3 | green | D2/SDA |
+| SCL | 4 | yellow | ~D3/SCL |
 
 
 
@@ -121,10 +121,10 @@ You will find pinout schematics for recommended board models below:
 
 | *STCC4* | *STCC4 Pin* | *Cable Color* | *Board Pin* |
 | :---: | --- | --- | --- |
-| SCL | 1 | yellow | D21/SCL |
-| GND | 2 | black | GND |
-| VDD | 3 | red | 3.3V |
-| SDA | 4 | green | D20/SDA |
+| GND | 1 | black | GND |
+| VDD | 2 | red | 3.3V |
+| SDA | 3 | green | D20/SDA |
+| SCL | 4 | yellow | D21/SCL |
 
 
 
@@ -140,10 +140,10 @@ You will find pinout schematics for recommended board models below:
 
 | *STCC4* | *STCC4 Pin* | *Cable Color* | *Board Pin* |
 | :---: | --- | --- | --- |
-| SCL | 1 | yellow | GPIO 22 |
-| GND | 2 | black | GND |
-| VDD | 3 | red | 3V3 |
-| SDA | 4 | green | GPIO 21 |
+| GND | 1 | black | GND |
+| VDD | 2 | red | 3V3 |
+| SDA | 3 | green | GPIO 21 |
+| SCL | 4 | yellow | GPIO 22 |
 
 
 
