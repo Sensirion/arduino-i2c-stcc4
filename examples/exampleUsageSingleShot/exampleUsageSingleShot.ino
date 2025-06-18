@@ -122,10 +122,22 @@ void loop() {
     error = sensor.readMeasurement(co2Concentration, temperature,
                                    relativeHumidity, status);
     if (error != NO_ERROR) {
-        Serial.print("Error trying to execute readMeasurement(): ");
+        // A failed read can be caused by clock shifting. We advise to retry
+        // after a delay of 150ms.
+        Serial.print(
+            "Error trying to execute readMeasurement() (retry in 150ms): ");
         errorToString(error, errorMessage, sizeof errorMessage);
         Serial.println(errorMessage);
-        return;
+        delay(150);
+        error = sensor.readMeasurement(co2Concentration, temperature,
+                                       relativeHumidity, status);
+        if (error != NO_ERROR) {
+            Serial.print("Error trying to execute readMeasurement() after "
+                         "additional delay: ");
+            errorToString(error, errorMessage, sizeof errorMessage);
+            Serial.println(errorMessage);
+            return;
+        }
     }
     //
     // Power down the sensor to reduce power consumption.
