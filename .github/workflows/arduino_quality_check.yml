@@ -8,9 +8,8 @@ on:
 
 jobs:
   arduino-quality:
-    uses: sensirion/.github/.github/workflows/driver.arduino.check.yml@main
+    uses: sensirion/.github/.github/workflows/driver.arduino.check.yml@updatearduino
     with:
       expect-arduino-examples: true
-      # change to "update" once you published the driver on Arduino library registry
-      lint-lib-manager-check: submit
+      lint-lib-manager-check: update
   
