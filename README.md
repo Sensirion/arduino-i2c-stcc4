@@ -12,6 +12,8 @@ Click [here](https://sensirion.com/products/catalog/STCC4) to learn more about t
 
 The default I²C address of [STCC4](https://sensirion.com/products/catalog/STCC4) is **0x64**.
 
+> [!NOTE]
+> The SEK-STCC4 board from Sensirion includes a STCC4 and a SHT4x for temperature and humidity compensation, which is controlled by the STCC4 through the integrated I2C controller interface. The provided examples are designed considering this sensor configuration.
 
 
 ## Installation of the library
