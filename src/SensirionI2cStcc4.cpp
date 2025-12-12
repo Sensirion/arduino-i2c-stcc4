@@ -297,7 +297,7 @@ int16_t SensirionI2cStcc4::enterSleepMode() {
     if (localError != NO_ERROR) {
         return localError;
     }
-    delay(2);
+    delay(1);
     return localError;
 }
 
