@@ -9,12 +9,14 @@ over I²C.
 Click [here](https://sensirion.com/products/catalog/STCC4) to learn more about the Sensirion STCC4 sensor.
 
 
+The STCC4 is Sensirion's next generation miniature CO2 sensor for indoor air quality applications.
+
+
 
 The default I²C address of [STCC4](https://sensirion.com/products/catalog/STCC4) is **0x64**.
 
 > [!NOTE]
 > The SEK-STCC4 board from Sensirion includes a STCC4 and a SHT4x for temperature and humidity compensation, which is controlled by the STCC4 through the integrated I2C controller interface. The provided examples are designed considering this sensor configuration.
-
 
 ## Installation of the library
 
@@ -167,9 +169,9 @@ You will find pinout schematics for recommended board models below:
 
 
 
-5. Click the `Upload` button in the Arduino IDE or `Sketch` ➔ `Upload`
+4. Click the `Upload` button in the Arduino IDE or `Sketch` ➔ `Upload`
 
-4. When the upload process has finished, open the `Serial Monitor` or `Serial
+5. When the upload process has finished, open the `Serial Monitor` or `Serial
    Plotter` via the `Tools` menu to observe the measurement values. Note that
    the `Baud Rate` in the used tool has to be set to `115200 baud`.
 
