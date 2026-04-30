@@ -14,6 +14,7 @@ SensirionI2cStcc4	KEYWORD1
 
 readMeasurement	KEYWORD2
 setPressureCompensation	KEYWORD2
+checkSelfTest	KEYWORD2
 startContinuousMeasurement	KEYWORD2
 readMeasurementRaw	KEYWORD2
 stopContinuousMeasurement	KEYWORD2
